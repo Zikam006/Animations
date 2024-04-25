@@ -1,0 +1,53 @@
+html,
+body{
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+ .sky,
+.grass,
+.road{
+    position: relative;
+    box-sizing: border-box;
+}
+.sky{
+    background-color: skyblue;
+    height:200px;
+    box-sizing: border-box;
+}
+.grass{
+    background-color: seagreen;
+    height:200px;
+    box-sizing: border-box;
+}
+.road{
+    background-color: dimgrey;
+    height:500px;
+    box-sizing: border-box;
+    border-top: 8px solid #a09e9e;
+    border-bottom: 8px solid #a09e9e;
+}
+.line{
+    height: 8px;
+    box-sizing: border-box;
+    border: 4px dashed #fff;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+.zikam{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 10s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+}
+
+/* || ANIMATIONS----*/
+@keyframes drive{
+    from{transform: translateX(0);}
+    to{transform: translateX(1300px);}
+}
